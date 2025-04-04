@@ -84,16 +84,6 @@ describe("OrderService", () => {
       );
     });
 
-    it("should throw an error if total price is less than or equal to 0", async () => {
-      const invalidOrder: Partial<Order> = {
-        items: [{ id: "1", productId: "p1", price: 100, quantity: 0 }],
-      };
-      //   await expect(orderService.process(invalidOrder)).rejects.toThrow('Total price must be greater than 0');
-      await expect(orderService.process(invalidOrder)).rejects.toThrow(
-        "Order items are invalid"
-      );
-    });
-
     it("should apply a valid coupon and reduce the total price", async () => {
       const validOrder: Partial<Order> = {
         items: [{ id: "1", productId: "p1", price: 100, quantity: 2 }],

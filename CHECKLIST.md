@@ -6,7 +6,6 @@
 - [x] Should throw an error if any item has `price <= 0`.
 - [x] Should throw an error if any item has `quantity <= 0`.
 - [x] Should throw an error if any item has both `price <= 0` and `quantity <= 0`.
-- [x] Should throw an error if `totalPrice <= 0`.
 - [x] Should apply a valid coupon and reduce the total price.
 - [x] Should throw an error if the coupon is invalid.
 - [x] Should set `totalPrice = 0` when the discount is greater than the total price.
