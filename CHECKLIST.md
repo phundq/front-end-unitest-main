@@ -23,3 +23,8 @@
 
 #### **payViaLink(order: Order)**
 - [x] Should open a new window with the correct payment URL.
+
+---
+
+### Test Results
+![Test Results](./public/images/test/test-envidence.png)
